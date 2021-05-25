@@ -53,9 +53,9 @@ test_data = DownSizePairImageFolder("./woman_test", transform=transforms.ToTenso
 batch_size = 8
 train_loader = DataLoader(train_data, batch_size, shuffle=True, num_workers=0)
 test_loader = DataLoader(test_data, batch_size, shuffle=False, num_workers=0)
-print(train_data)
-print(test_data)
-
+#print(train_data)
+#print(test_data)
+'''
 images_lr, images_hr = iter(train_loader).next()
 image=images_hr[0]
 print(image.size())
@@ -70,7 +70,7 @@ image_np=image.numpy()
 print(image_np.max(),image_np.min())
 image_np=np.transpose(image_np,(1,2,0))
 plt.imshow(image_np)
-
+'''
 class Generator(nn.Module):
     def __init__(self,image_size):
         super(Generator,self).__init__()
