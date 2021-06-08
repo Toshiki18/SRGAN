@@ -366,7 +366,7 @@ def train(epoch):
             print("save_image")
 
         return D_loss,G_loss
-
+'''
 num_epoch=10
 
 
@@ -380,7 +380,7 @@ for epoch in range(1,num_epoch+1):
         #generate_image(epoch)
         torch.save(G.state_dict(),"./asset/G_2nd_epoch{}.pth".format(epoch))
         torch.save(D.state_dict(),"./asset/D_2nd_epoch{}.pth".format(epoch))
-
+'''
 num_epoch=1000
 
 
